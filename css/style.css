@@ -91,11 +91,11 @@ body {
 	margin-bottom: 15px;
 }
 
-.expertise img {
+/*.expertise img {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-}
+}*/
 
 .profile-info .geser {
 	margin-left: 15px;
@@ -155,6 +155,17 @@ body {
 	font-weight: bold;
 }
 
+.icon .fa-html5,
+.fa-css3-alt,
+.fa-js-square,
+.fa-php,
+.fa-github,
+.fa-bootstrap,
+.fa-free-code-camp,
+.fa-laravel {
+	font-size: 30px;
+}
+
 .project img:hover {
 	cursor: pointer;
 }
@@ -173,6 +184,14 @@ body {
 
 .active {
 	opacity: 0.5;
+}
+
+.expertise .fa-html5 {
+	font-size: 50px;
+}
+
+.copyright .fa-heart {
+	color: red;
 }
 
 

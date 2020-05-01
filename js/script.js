@@ -18,5 +18,54 @@ container.addEventListener('click', function(e){
 		})
 		e.target.classList.add('active');
 	}
-})
+});
+
+
+$(document).ready(function(){
+// scroll JS
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        window.location.hash = hash;
+      });
+    } 
+  });
+
+
+// gallery box
+  $('.popup-gallery').magnificPopup({
+   delegate: 'a',
+   type: 'image',
+   tLoading: 'Loading image #%curr%...',
+   mainClass: 'mfp-img-mobile',
+   gallery: {
+    enabled: true,
+    navigateByImgClick: true,
+    preload: [0,1] 
+    // Will preload 0 - before current, and 1 after the current image
+   },
+   image: {
+    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+    titleSrc: function(item) {
+     return item.el.attr('title') + '<small></small>';
+    }
+   }
+  });
+
+
+
+
+
+
+
+
+
+});
 
