@@ -147,6 +147,11 @@ body {
 	margin-bottom: 20px;
 }
 
+#copyright {
+	text-align: center;
+	margin-left: 90px;
+}
+
 .copyright .fa-heart-o {
 	color: red;
 }
@@ -202,6 +207,22 @@ body {
 		object-position: center;
 
 	}
+
+	.contact {
+		top:-750px;
+		right: 80px;
+		color: #eee;
+		box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+		position: absolute;
+		border-radius: 3px;
+	}
+
+	.copyright {
+		position: absolute;
+		top:-780px;
+		right: 110px;
+		text-shadow: 2px 2px 5px rgba(0,0,0,.2);
+	}
 }
 
 @media only screen and (max-width:900px) 
@@ -233,5 +254,21 @@ body {
 	span
 	{
 		display: block;
+	}
+	.contact {
+		top:-740px;
+		right: 90px;
+		margin: auto;
+		color: #eee;
+		box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+		position: absolute;
+		border-radius: 3px;
+	}
+
+	.copyright {
+		position: absolute;
+		top:-780px;
+		left: 170px;
+		text-shadow: 2px 2px 5px rgba(0,0,0,.2);
 	}
 }
